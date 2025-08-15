@@ -26,7 +26,7 @@ namespace ExpenseApp
             InitializeComponent();
 
             this.Text = "Expense Tracker";
-            this.ClientSize = new Size(650, 600);
+            this.ClientSize = new Size(502,450);
             this.BackColor = Color.FromArgb(245, 246, 250);
             this.Font = new Font("Segoe UI", 10);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -54,6 +54,8 @@ namespace ExpenseApp
             btnEditExpense = new Button() { Text = "Edit Expense", Location = new Point(startX + buttonWidth + spacing, yPos), Width = buttonWidth, Height = buttonHeight, Enabled = false };
             btnDelete = new Button() { Text = "Delete", Location = new Point(startX + 2 * (buttonWidth + spacing), yPos), Width = buttonWidth, Height = buttonHeight };
             btnExportExcel = new Button() { Text = "Export to Excel", Location = new Point(30, 530), Width = 180, Height = 40 };
+
+
 
             lvExpenses = new ListView()
             {
